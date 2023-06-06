@@ -1,0 +1,225 @@
+/* TODO: move these items to scss rather than overwriting style.css */
+
+ul {
+    padding: 0
+}
+
+.region-nav-branding{
+    padding: 0;
+}
+
+.navbar {
+    padding: 0 4px;
+}
+
+.language-switcher-language {
+    background: rgb(71, 176, 230, 0.09);
+    padding: 0 1px;
+    margin: 0 1px;
+}
+
+/* [dir="rtl"] .dropdown-toggle {
+     display: none; 
+} */
+
+
+a.language-link {
+    color: rgb(255,255,255,.85);
+}
+
+a.language-link:hover {
+    color: rgb(255,255,255,1);
+}
+
+a.language-link.is-active {
+    display: none;
+}
+/* .body {
+    font-family: Somar;
+} */
+
+/* h1,
+h2,
+h3,
+h4 {
+    font-family: Cairo;
+} */
+.vertical {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.news-category {
+    border-radius: 0.25rem;
+    background: rgb(240,215,30, .75);
+}
+
+.news-category a:link, .card-news a:link { color: rgb(25,38,76,0.9); }
+.news-category a:visited, .card-news a:visited { color: rgb(25, 38, 76, .7); }
+.news-category a:hover, .card-news a:hover { color: rgb(25, 38, 76, .9); }
+.news-category a:active, .card-news a:active { color: rgb(25, 38, 76, 1); font-weight: 110%;} 
+
+/* Does this even work? */
+a[dir="rtl"] {
+    text-align: right;
+}
+
+
+header .region-nav-main {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+header .nav-link-level-0 {
+    text-transform: uppercase;
+}
+
+header .dropdown-menu {
+    --bs-dropdown-bg: rgb(25, 38, 76);
+     background: var(--bs-gray-100); 
+    --bs-dropdown-link-color: rgb(25, 38, 76);
+    --bs-dropdown-link-hover-color: rgb(25, 38, 76);
+    --bs-dropdown-link-hover-bg: var(--bs-gray-200); 
+    --bs-dropdown-link-active-color: rgb(25, 38, 76);
+    --bs-dropdown-link-active-bg: var(--bs-gray-200); 
+    text-transform: none;
+    border-radius: 2px;
+} 
+
+
+a {
+    text-decoration: none;
+    color:  rgb(2, 117, 216,.85); /*rgb(25, 38, 76);*/
+}
+
+
+/* ---------------------------------------------- */
+/* Temporary moved from bootstrap studio - cleanup */
+#footer {
+    font-size: 95%;
+    background: var(--bs-gray-200);
+    margin-top: 0px;
+    padding-top: 0px;
+    color: var(--bs-dark-rgb);
+}
+
+#footer .block-menu {
+    padding: 5px;
+}
+
+#footer .na
+v-link {
+    padding: 0;
+}
+
+#footer-info {
+    font-size: 90%;
+}
+
+#course-list-element {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#carousel-medium .card-news {
+    margin: 0 5px;
+    width: calc(100%/2);
+}
+
+#carousel-large .card-news {
+    margin: 0 5px;
+    width: calc(100%/3);
+}
+
+.cards-wrapper {
+    display: flex;
+}
+
+#faculty-card {
+    max-width: 500px;
+    /* height: 500px; */
+}
+
+
+#faculty-card-img-wrapper {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: -60px;
+    z-index: 1;
+}
+
+
+#faculty-card-text {
+    border-radius: 0px 0px 7px 7px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+#faculty-card-text a {
+    color: var(--bs-dark-rgb);
+}
+
+#faculty-card-text a:hover {
+    font-size: 110%;
+}
+
+#faculty-card-text .email, hr {
+    color: black;
+    font-size: 90%;
+}
+
+#faculty-card-text  hr {
+        position: relative;
+        top: 20px;
+        border: none;
+        height: 12px;
+        background: black;
+        margin-bottom: 20px;
+}
+
+
+.image-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#news-card-body {
+    padding: 0;
+    border-radius: 0;
+}
+
+#news-card-body-img {
+    padding: 0;
+}
+
+#news-card-body-text {
+        border-radius: 0px 0px 7px 7px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    top: 130px;
+    display: block;
+}
+
+/* ---------------------------- */
+
+/* .views-exposed-form {
+
+} */
+
+/* .views-exposed-form label, 
+.views-exposed-form .form--inline {
+ display:flex;
+} */
+
+.site-logo img{
+    margin: 1;
+}

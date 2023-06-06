@@ -1,0 +1,17 @@
+header {
+        font-size: 90%;
+}
+
+.site-title{
+        font-size: 70% !important;
+}
+
+
+a.language-link {
+    color: rgb(2, 117, 216,.85);
+}
+
+a.language-link:hover {
+    color: rgb(255,255,255,1);
+}
+
