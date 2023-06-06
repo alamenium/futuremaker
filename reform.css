@@ -1,0 +1,326 @@
+*{
+
+}
+
+#bannerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.blueBanner{
+    background-color: #00a4d7;
+}
+.redBanner{
+    background-color: #c94143;
+}
+
+#banner{
+    height: 200px;
+    width: auto;
+}
+
+
+.arabic{
+    font-size: 1.1rem;
+    direction: rtl;
+    display: none;
+}
+.english{
+    font-size: 1.1rem;
+    direction: ltr;
+    display: block;
+}
+
+
+p{
+    font-size: 1.2rem;
+    margin: 0 2rem;
+}
+
+#englishButton{
+    background-color: #c94143;
+    border: darkred solid 1px;
+    border-radius: 5px;
+}
+#englishButton:hover{
+    color: #c94143;
+    background-color: white;
+    border: #c94143 solid 1px;
+    border-radius: 5px;
+}
+#arabicButton{
+
+    color: #c94143;
+    background-color: white;
+    border: #c94143 solid 2px;
+    border-radius: 5px;
+}
+
+#arabicButton:hover{
+    color: white;
+    background-color: #c94143;
+    border: darkred solid 2px;
+    border-radius: 5px;
+}
+
+a{
+    font-weight: bold;
+}
+
+h1{
+    margin: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registryButton{
+    font-size: 1.1em;
+    color: white;
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 2em;
+    font-weight: bolder;
+    border: none;
+    background-image: url("images/WEB12.jpg");
+    background-size: cover;
+
+}
+.workshopButton{
+    font-size: 1.1em;
+    color: white;
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    padding: 0.2em;
+    margin: 0.3em;
+    font-weight: bolder;
+    border: none;
+    background-image: url("images/WEB4.jpg");
+    background-size: cover;
+}
+
+.darkBg{
+    border-radius: 0.3em;
+    padding: 0 0.1em;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.fillPage{
+
+    height: 100vh;
+}
+
+.fullWidth{
+    width: 100vw;
+}
+
+.darkBlue{
+    background-color: #1c2b51;
+}.darkBlue2{
+    background-color: #152f52;
+}
+
+.lightBlue{
+    background-color: #15abe2;
+}
+
+.talker {
+    display: flex;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the box horizontally */
+
+}
+
+.talker .image-container {
+    flex: 0 0 50%; /* Take 50% of the line */
+    position: relative;
+    overflow: hidden;
+}
+
+.talker .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.talker .image-container::after {
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background-color: rgba(28, 43, 81, 0.35);
+             pointer-events: none; /* Allows clicking through the overlay */
+         }
+
+.talker .content {
+    flex: 0 0 50%; /* Take 50% of the line */
+    background-color: rgba(28, 43, 81, 1); /* Semi-transparent red background */
+    color: #fff; /* Text color */
+    padding: 1em 1em;
+}
+
+.talker .content h2,
+.talker .content p {
+    text-align: center;
+    margin: 0;
+}
+
+.purple{
+    background-color: #271455;
+}
+
+.containerr {
+    position: relative;
+}
+
+.image-wrapperr {
+    margin-right: 20px;
+}
+
+.sidebarr {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.sidebarr.show {
+    right: 0;
+}
+
+.sidebarr img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebarr h3 {
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+.sidebarr p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7) !important;
+    margin: 0;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .containerr {
+        flex-direction: column;
+    }
+
+    .image-wrapperr {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.fade-out {
+    pointer-events: none;
+    animation: fadeOut 1.4s forwards;
+}
+
+#fade-out-element{
+    visibility: hidden;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.grid-container {
+    background-color: rgba(21, 47, 82, 1);;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+}
+
+.grid-item {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.grid-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+
+.grid-item-overlayed {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.grid-item-overlayed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 47, 82, 0.6); /* Replace with your desired color */
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.grid-item-overlayed img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
